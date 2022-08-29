@@ -20,6 +20,7 @@ contract TokenERC20 {
 
   // This creates an array with all balances
   mapping(address => uint256) public balanceOf;
+  // mapping of all the addresses that can allow transactions to an array (mapping #2) of addresses => balances
   mapping(address => mapping(address => uint256)) public allowance;
 
   // This generates a public event on the blockchain that will notify clients
